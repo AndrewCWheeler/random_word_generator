@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Word Generator</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Random Word Generator</h1>
+                <h3>Random Word (attempt # {{counter}})</h3>
+                <a href="/random_word" class="btn btn-primary" role="button" value="generate">Generate</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col empty"></div>
+            <div class="col-6 ">
+                <div class="word_box">
+                    <h1>{{generate_word}}</h1>
+                </div>
+            </div>
+            <div class="col empty"></div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a class="btn btn-danger" href="/resetting" type="button" value="reset">Reset</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

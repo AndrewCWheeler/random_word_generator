@@ -1,0 +1,14 @@
+.word_box {
+    outline: 2px solid black;
+    height: 100px; 
+    margin: 10px 0px 10px 0px;
+    padding: 20px 80px 20px 80px;
+}
+.empty {
+    height: 100px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+
+
